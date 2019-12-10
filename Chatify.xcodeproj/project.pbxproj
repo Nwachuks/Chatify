@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		26648D2A239F8AB200552661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D29239F8AB200552661 /* AppDelegate.swift */; };
-		26648D2C239F8AB200552661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D2B239F8AB200552661 /* ViewController.swift */; };
+		26648D2C239F8AB200552661 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D2B239F8AB200552661 /* WelcomeViewController.swift */; };
 		26648D2F239F8AB200552661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26648D2D239F8AB200552661 /* Main.storyboard */; };
 		26648D31239F8AB500552661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26648D30239F8AB500552661 /* Assets.xcassets */; };
 		26648D34239F8AB500552661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26648D32239F8AB500552661 /* LaunchScreen.storyboard */; };
 		26648D3F239F8AB500552661 /* ChatifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D3E239F8AB500552661 /* ChatifyTests.swift */; };
 		26648D4A239F8AB500552661 /* ChatifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D49239F8AB500552661 /* ChatifyUITests.swift */; };
+		26648D5B239FB0C900552661 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D5A239FB0C900552661 /* RegisterViewController.swift */; };
+		26648D5D239FB13400552661 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D5C239FB13400552661 /* LoginViewController.swift */; };
+		26648D5F239FB19E00552661 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D5E239FB19E00552661 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		26648D26239F8AB200552661 /* Chatify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26648D29239F8AB200552661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26648D2B239F8AB200552661 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26648D2B239F8AB200552661 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		26648D2E239F8AB200552661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26648D30239F8AB500552661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26648D33239F8AB500552661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		26648D45239F8AB500552661 /* ChatifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26648D49239F8AB500552661 /* ChatifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatifyUITests.swift; sourceTree = "<group>"; };
 		26648D4B239F8AB500552661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26648D5A239FB0C900552661 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		26648D5C239FB13400552661 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		26648D5E239FB19E00552661 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				26648D29239F8AB200552661 /* AppDelegate.swift */,
-				26648D2B239F8AB200552661 /* ViewController.swift */,
-				26648D2D239F8AB200552661 /* Main.storyboard */,
+				26648D57239F8CC500552661 /* Model */,
+				26648D58239F8CD200552661 /* View */,
+				26648D59239F8CD900552661 /* Controller */,
 				26648D30239F8AB500552661 /* Assets.xcassets */,
-				26648D32239F8AB500552661 /* LaunchScreen.storyboard */,
 				26648D35239F8AB500552661 /* Info.plist */,
 			);
 			path = Chatify;
@@ -123,6 +129,33 @@
 				26648D4B239F8AB500552661 /* Info.plist */,
 			);
 			path = ChatifyUITests;
+			sourceTree = "<group>";
+		};
+		26648D57239F8CC500552661 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26648D58239F8CD200552661 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26648D32239F8AB500552661 /* LaunchScreen.storyboard */,
+				26648D2D239F8AB200552661 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26648D59239F8CD900552661 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26648D2B239F8AB200552661 /* WelcomeViewController.swift */,
+				26648D5A239FB0C900552661 /* RegisterViewController.swift */,
+				26648D5C239FB13400552661 /* LoginViewController.swift */,
+				26648D5E239FB19E00552661 /* ChatViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26648D2C239F8AB200552661 /* ViewController.swift in Sources */,
+				26648D5D239FB13400552661 /* LoginViewController.swift in Sources */,
+				26648D5B239FB0C900552661 /* RegisterViewController.swift in Sources */,
+				26648D2C239F8AB200552661 /* WelcomeViewController.swift in Sources */,
+				26648D5F239FB19E00552661 /* ChatViewController.swift in Sources */,
 				26648D2A239F8AB200552661 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PBYB2A9889;
 				INFOPLIST_FILE = Chatify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PBYB2A9889;
 				INFOPLIST_FILE = Chatify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
