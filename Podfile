@@ -8,6 +8,8 @@ target 'Chatify' do
   # Pods for Chatify
 
   pod 'CLTypingLabel', '~> 0.4.0'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
   target 'ChatifyTests' do
     inherit! :search_paths

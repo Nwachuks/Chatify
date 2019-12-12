@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		26648D5B239FB0C900552661 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D5A239FB0C900552661 /* RegisterViewController.swift */; };
 		26648D5D239FB13400552661 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D5C239FB13400552661 /* LoginViewController.swift */; };
 		26648D5F239FB19E00552661 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26648D5E239FB19E00552661 /* ChatViewController.swift */; };
+		26CE938F23A2658C00175D23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26CE938E23A2658C00175D23 /* GoogleService-Info.plist */; };
 		3BEFB187A50B9E500A0600CF /* Pods_Chatify_ChatifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAAE28A9EA71755DADD7B04 /* Pods_Chatify_ChatifyUITests.framework */; };
 		B46B87A8D663BA835E6D8BD6 /* Pods_Chatify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E147F629794AE774B287BB1 /* Pods_Chatify.framework */; };
 		C29B82912741B92F96416402 /* Pods_ChatifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A5FD1D64EDE8C68FA798B3 /* Pods_ChatifyTests.framework */; };
@@ -57,6 +58,7 @@
 		26648D5A239FB0C900552661 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		26648D5C239FB13400552661 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		26648D5E239FB19E00552661 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		26CE938E23A2658C00175D23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E147F629794AE774B287BB1 /* Pods_Chatify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91AEACBF0381D942D623DB77 /* Pods-Chatify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatify.release.xcconfig"; path = "Target Support Files/Pods-Chatify/Pods-Chatify.release.xcconfig"; sourceTree = "<group>"; };
 		A1C74043C9D7E802CA6266DE /* Pods-Chatify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatify.debug.xcconfig"; path = "Target Support Files/Pods-Chatify/Pods-Chatify.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				26648D59239F8CD900552661 /* Controller */,
 				26648D30239F8AB500552661 /* Assets.xcassets */,
 				26648D35239F8AB500552661 /* Info.plist */,
+				26CE938E23A2658C00175D23 /* GoogleService-Info.plist */,
 			);
 			path = Chatify;
 			sourceTree = "<group>";
@@ -185,7 +188,6 @@
 				DCD316DC46446A9F04904F61 /* Pods-ChatifyTests.debug.xcconfig */,
 				B8E841D993E6484F0556DFBF /* Pods-ChatifyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26648D34239F8AB500552661 /* LaunchScreen.storyboard in Resources */,
+				26CE938F23A2658C00175D23 /* GoogleService-Info.plist in Resources */,
 				26648D31239F8AB500552661 /* Assets.xcassets in Resources */,
 				26648D2F239F8AB200552661 /* Main.storyboard in Resources */,
 			);
