@@ -16,7 +16,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        titleLabel.text = "⚡️Chatify"
+        titleLabel.text = K.appName
         
 //        var charIndex = 0.0
 //        let titleText = "⚡️Chatify"
