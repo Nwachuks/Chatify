@@ -22,10 +22,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginTapped(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {
+            // Authenticate user sign in
             Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
                 if let e = error {
                     print(e)
                 } else {
+                    // Navigate to chat screen
                     self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
             }

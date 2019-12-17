@@ -15,17 +15,20 @@ class WelcomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // Hide the navigation bar on the Welcome screen
         navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        // Unhide the navigation bar from other screens
         navigationController?.isNavigationBarHidden =  false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // Set the app name
         titleLabel.text = K.appName
         
 //        var charIndex = 0.0

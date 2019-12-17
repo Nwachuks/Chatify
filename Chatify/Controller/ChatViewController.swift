@@ -11,15 +11,16 @@ import Firebase
 
 class ChatViewController: UIViewController {
     
+    // Initialize Firebase
     let db = Firestore.firestore()
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
     
     var messages: [Message] = [
-        Message(sender: "1@2.com", body: "Hey!"),
-        Message(sender: "a@b.com", body: "Hello!"),
-        Message(sender: "1@2.com", body: "What's up?")
+//        Message(sender: "1@2.com", body: "Hey!"),
+//        Message(sender: "a@b.com", body: "Hello!"),
+//        Message(sender: "1@2.com", body: "What's up?")
     ]
     
     override func viewDidLoad() {
@@ -33,6 +34,7 @@ class ChatViewController: UIViewController {
         title = K.appName
         navigationItem.hidesBackButton = true
         
+        // Register chat cell
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
         
         loadMessages()
@@ -51,7 +53,7 @@ class ChatViewController: UIViewController {
                 } else {
                     print("Message data successfully saved!")
                     
-                    // Clear out the text field
+                    // Clear out the chat text field
                     DispatchQueue.main.async {
                         self.messageTextField.text = ""
                     }
@@ -71,7 +73,7 @@ class ChatViewController: UIViewController {
     }
     
     func loadMessages() {
-        // Listen for updates as new messages are being added
+        // Listen for updates through snapshots as new messages are being added
         db.collection(K.FStore.collectionName).order(by: K.FStore.dateField)
             .addSnapshotListener { (querySnapshot, error) in
             // Clear initial messages
@@ -89,6 +91,7 @@ class ChatViewController: UIViewController {
                             
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
+                                // Jump to latest messages
                                 let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
                                 self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }

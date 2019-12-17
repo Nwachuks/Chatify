@@ -22,6 +22,7 @@ class RegisterViewController: UIViewController {
     
     @IBAction func registerTapped(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {
+            // Create new user in Firebase
             Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
                 if let e = error {
                     print(e.localizedDescription)
